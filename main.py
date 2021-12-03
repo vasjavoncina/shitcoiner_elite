@@ -39,7 +39,7 @@ def API():
     gmt = time.strftime("%a, %d %b %Y %H:%M:%S GMT", time.gmtime())
     zamakjen = eno_uro_nazaj(gmt)
     print(lightgreen(gmt))
-    print(lightgreen(zamakjen))
+    print(rdece("zamik: ") + lightgreen(zamakjen))
     headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0',
     'Accept': 'application/json, text/plain, */*',
